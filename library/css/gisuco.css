@@ -1,0 +1,1266 @@
+@charset "UTF-8";
+@keyframes showNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes showNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes showNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hideNav {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes hideNav {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes hideNav {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes hideNav {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* line 16, ../scss/gisuco.scss */
+a {
+  color: #3e3e3e;
+  border-style: none;
+  text-decoration: none;
+}
+
+/* line 22, ../scss/gisuco.scss */
+a img {
+  border: none;
+  border-style: none;
+  text-decoration: none;
+}
+
+/* line 28, ../scss/gisuco.scss */
+a:link, a:link img {
+  border: none;
+  border-style: none;
+  text-decoration: none;
+}
+
+/* line 34, ../scss/gisuco.scss */
+a:visited, a:visited img {
+  border: none;
+  border-style: none;
+  text-decoration: none;
+}
+
+/* line 40, ../scss/gisuco.scss */
+a:focus, a:hover, a:focus img, a:hover img {
+  border: none;
+  border-style: none;
+  text-decoration: none;
+}
+
+/* line 46, ../scss/gisuco.scss */
+a:active, a:active img {
+  border: none;
+  border-style: none;
+  text-decoration: none;
+}
+
+/* line 52, ../scss/gisuco.scss */
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 58, ../scss/gisuco.scss */
+.m_top {
+  margin-top: 4%;
+}
+
+/* line 62, ../scss/gisuco.scss */
+.small_ch {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+/* line 67, ../scss/gisuco.scss */
+.medium {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+/* line 72, ../scss/gisuco.scss */
+.large_ch {
+  font-size: 3.5em;
+  font-weight: normal;
+}
+
+/* line 77, ../scss/gisuco.scss */
+.bold_ch {
+  font-weight: bold;
+}
+
+/* line 81, ../scss/gisuco.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #3e3e3e;
+  font-size: 16px;
+  font-family: 'Open Sans', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic",sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* line 91, ../scss/gisuco.scss */
+body img {
+  vertical-align: bottom;
+}
+
+/* End hide from IE-mac */
+/* line 97, ../scss/gisuco.scss */
+.aligncenter {
+  text-align: center;
+}
+
+/* line 100, ../scss/gisuco.scss */
+.alignleft {
+  text-align: left;
+}
+
+/* line 103, ../scss/gisuco.scss */
+.alignright {
+  text-align: right;
+}
+
+/* line 106, ../scss/gisuco.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 109, ../scss/gisuco.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 112, ../scss/gisuco.scss */
+.overline {
+  text-decoration: overline;
+}
+
+/* line 115, ../scss/gisuco.scss */
+.line-through {
+  text-decoration: line-through;
+}
+
+/* line 118, ../scss/gisuco.scss */
+.left_contents {
+  float: left;
+}
+
+/* line 121, ../scss/gisuco.scss */
+.right_contents {
+  float: right;
+}
+
+/* line 124, ../scss/gisuco.scss */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* line 130, ../scss/gisuco.scss */
+ul {
+  list-style: none;
+}
+
+/*general_setting*/
+/* line 136, ../scss/gisuco.scss */
+#main_contente {
+  margin: 0 auto;
+}
+
+/* line 140, ../scss/gisuco.scss */
+.flex_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 146, ../scss/gisuco.scss */
+.contents_wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  /* line 146, ../scss/gisuco.scss */
+  .contents_wrap {
+    width: 100%;
+  }
+}
+
+/* line 154, ../scss/gisuco.scss */
+.button_wrap {
+  width: 100%;
+  padding: 5% 0 0;
+}
+/* line 157, ../scss/gisuco.scss */
+.button_wrap a, .button_wrap input[type=submit] {
+  width: 20%;
+  background-color: #3f7eb9;
+  border: 2px solid #3f7eb9;
+  display: block;
+  color: #fff;
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 1% 0;
+  transition: all .3s;
+  text-align: center;
+}
+/* line 168, ../scss/gisuco.scss */
+.button_wrap a:hover, .button_wrap input[type=submit]:hover {
+  background-color: #fff;
+  border: 2px solid #3f7eb9;
+  color: #3f7eb9;
+}
+@media screen and (max-width: 768px) {
+  /* line 157, ../scss/gisuco.scss */
+  .button_wrap a, .button_wrap input[type=submit] {
+    width: 60%;
+    padding: 3% 0;
+  }
+}
+
+/* line 181, ../scss/gisuco.scss */
+.nav {
+  border: none;
+  position: relative;
+}
+/* line 184, ../scss/gisuco.scss */
+.nav .btn-nav {
+  width: 75px;
+  height: 75px;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 99999;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+/* line 197, ../scss/gisuco.scss */
+.nav .btn-nav:focus {
+  outline: 0;
+}
+/* line 200, ../scss/gisuco.scss */
+.nav .btn-nav .icon-bar {
+  width: 32px;
+  height: 3px;
+  background-color: #3e3e3e;
+  display: block;
+  margin: 8px auto;
+  z-index: 999999;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+  -ms-transition: 0.7s ease;
+  transition: 0.7s ease;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+/* line 209, ../scss/gisuco.scss */
+.nav .btn-nav .icon-bar::hover .icon-bar {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: #FCA311;
+}
+@media screen and (max-width: 480px) {
+  /* line 184, ../scss/gisuco.scss */
+  .nav .btn-nav {
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    right: 15px;
+  }
+  /* line 223, ../scss/gisuco.scss */
+  .nav .btn-nav .icon-bar {
+    width: 25px;
+    margin: 6px auto;
+  }
+}
+/* line 229, ../scss/gisuco.scss */
+.nav .animated {
+  background: transparent;
+}
+/* line 231, ../scss/gisuco.scss */
+.nav .animated .top {
+  background-color: #fff;
+  -webkit-transform: translateY(9px) rotateZ(45deg);
+  -moz-transform: translateY(9px) rotateZ(45deg);
+  -ms-transform: translateY(9px) rotateZ(45deg);
+  -o-transform: translateY(9px) rotateZ(45deg);
+  transform: translateY(9px) rotateZ(45deg);
+}
+/* line 239, ../scss/gisuco.scss */
+.nav .animated .bottom {
+  background-color: #fff;
+  -webkit-transform: translateY(-12px) rotateZ(-45deg);
+  -moz-transform: translateY(-12px) rotateZ(-45deg);
+  -ms-transform: translateY(-12px) rotateZ(-45deg);
+  -o-transform: translateY(-12px) rotateZ(-45deg);
+  transform: translateY(-12px) rotateZ(-45deg);
+}
+/* line 247, ../scss/gisuco.scss */
+.nav .animated .middle {
+  background-color: #fff;
+  width: 0;
+}
+@media screen and (max-width: 480px) {
+  /* line 252, ../scss/gisuco.scss */
+  .nav .animated .top {
+    background-color: #fff;
+    -webkit-transform: translateY(6px) rotateZ(45deg);
+    -moz-transform: translateY(6px) rotateZ(45deg);
+    -ms-transform: translateY(6px) rotateZ(45deg);
+    -o-transform: translateY(6px) rotateZ(45deg);
+    transform: translateY(6px) rotateZ(45deg);
+  }
+  /* line 260, ../scss/gisuco.scss */
+  .nav .animated .bottom {
+    background-color: #fff;
+    -webkit-transform: translateY(-12px) rotateZ(-45deg);
+    -moz-transform: translateY(-12px) rotateZ(-45deg);
+    -ms-transform: translateY(-12px) rotateZ(-45deg);
+    -o-transform: translateY(-12px) rotateZ(-45deg);
+    transform: translateY(-12px) rotateZ(-45deg);
+  }
+}
+
+/* line 271, ../scss/gisuco.scss */
+.nav-content {
+  position: fixed;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+/* line 280, ../scss/gisuco.scss */
+.nav-content .nav-list {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 288, ../scss/gisuco.scss */
+.nav-content .nav-list .nav-item {
+  padding-bottom: 2%;
+}
+@media screen and (max-width: 768px) {
+  /* line 288, ../scss/gisuco.scss */
+  .nav-content .nav-list .nav-item {
+    padding-bottom: 3%;
+  }
+}
+/* line 293, ../scss/gisuco.scss */
+.nav-content .nav-list .nav-item .item-anchor {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  position: relative;
+  text-decoration: none;
+}
+/* line 300, ../scss/gisuco.scss */
+.nav-content .nav-list .nav-item .item-anchor::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  background-color: #fff;
+  transition: all .3s ease;
+}
+/* line 316, ../scss/gisuco.scss */
+.nav-content .nav-list .nav-item .item-anchor:hover::after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+
+/* line 328, ../scss/gisuco.scss */
+.showNav {
+  -webkit-animation: showNav 1s ease forwards;
+  -moz-animation: showNav 1s ease forwards;
+  -o-animation: showNav 1s ease forwards;
+  animation: showNav 1s ease forwards;
+}
+
+/* line 334, ../scss/gisuco.scss */
+.hideNav {
+  -webkit-animation: hideNav 1s ease forwards;
+  -moz-animation: hideNav 1s ease forwards;
+  -o-animation: hideNav 1s ease forwards;
+  animation: hideNav 1s ease forwards;
+  z-index: -1;
+}
+
+/* line 341, ../scss/gisuco.scss */
+.hidden {
+  display: none;
+}
+
+/*general_settingここまで*/
+/* line 347, ../scss/gisuco.scss */
+#wrapper {
+  width: 100%;
+  min-width: 1000px;
+}
+@media screen and (max-width: 768px) {
+  /* line 347, ../scss/gisuco.scss */
+  #wrapper {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+/* line 354, ../scss/gisuco.scss */
+#wrapper .index_top {
+  background-image: url(../images/header_background.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 80%;
+}
+@media screen and (max-width: 768px) {
+  /* line 354, ../scss/gisuco.scss */
+  #wrapper .index_top {
+    background-size: 90%;
+  }
+}
+/* line 363, ../scss/gisuco.scss */
+#wrapper .main_header {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  /* line 363, ../scss/gisuco.scss */
+  #wrapper .main_header {
+    height: auto !important;
+    padding: 35% 0 20% 0;
+  }
+}
+/* line 370, ../scss/gisuco.scss */
+#wrapper .main_header .contents_wrap {
+  width: auto;
+  margin: 0;
+  text-align: center;
+}
+/* line 374, ../scss/gisuco.scss */
+#wrapper .main_header .contents_wrap div {
+  width: 112px;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 480px) {
+  /* line 374, ../scss/gisuco.scss */
+  #wrapper .main_header .contents_wrap div {
+    width: 60px;
+    padding-bottom: 8%;
+  }
+}
+/* line 383, ../scss/gisuco.scss */
+#wrapper .main_header .contents_wrap p {
+  font-size: 1.8em;
+  font-family: "Crimson Text";
+  font-style: italic;
+  letter-spacing: 3px;
+  padding-bottom: 1.5%;
+}
+@media screen and (max-width: 480px) {
+  /* line 383, ../scss/gisuco.scss */
+  #wrapper .main_header .contents_wrap p {
+    font-size: 1em;
+  }
+}
+/* line 393, ../scss/gisuco.scss */
+#wrapper .main_header .contents_wrap h1 {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 2;
+}
+@media screen and (max-width: 480px) {
+  /* line 393, ../scss/gisuco.scss */
+  #wrapper .main_header .contents_wrap h1 {
+    font-size: 0.7em;
+  }
+}
+/* line 404, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap {
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 768px) {
+  /* line 406, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap#about_business {
+    margin-top: 10%;
+  }
+  /* line 409, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap#about_business .business_header {
+    padding-bottom: 5%;
+  }
+  /* line 411, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap#about_business .business_header h2 {
+    font-size: 3em;
+  }
+}
+/* line 417, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap .business_header {
+  text-align: center;
+  padding-bottom: 4%;
+}
+@media screen and (max-width: 480px) {
+  /* line 417, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap .business_header {
+    padding-bottom: 15%;
+  }
+}
+/* line 423, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap .business_header h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5em;
+  font-weight: 100;
+  padding: 3% 0 0;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  /* line 423, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap .business_header h2 {
+    font-size: 3.5em;
+  }
+}
+/* line 433, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap .business_header p {
+  color: #3f7eb9;
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  /* line 433, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap .business_header p {
+    font-size: 0.8em;
+  }
+}
+/* line 441, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul {
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  /* line 441, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul {
+    display: block;
+  }
+}
+/* line 447, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li {
+  width: 32.33%;
+  position: relative;
+}
+/* line 450, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li:nth-child(1) {
+  background-image: url(../images/top_businessimg01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 455, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li:nth-child(2) {
+  background-image: url(../images/top_businessimg02.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* line 460, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li:nth-child(3) {
+  background-image: url(../images/top_businessimg03.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (max-width: 768px) and (min-width: 541px) {
+  /* line 447, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+  }
+  /* line 469, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li:nth-child(1) {
+    background-image: url(../images/sp_top_businessimg01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  /* line 474, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li:nth-child(2) {
+    background-image: url(../images/sp_top_businessimg02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  /* line 479, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li:nth-child(3) {
+    background-image: url(../images/sp_top_businessimg03.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  /* line 447, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  /* line 489, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li:nth-child(1) {
+    background-image: url(../images/sp_top_businessimg01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  /* line 494, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li:nth-child(2) {
+    background-image: url(../images/sp_top_businessimg02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  /* line 499, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li:nth-child(3) {
+    background-image: url(../images/sp_top_businessimg03.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+/* line 505, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li a {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(116, 176, 232, 0.8);
+  opacity: 0;
+  position: absolute;
+  z-index: 100;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+/* line 513, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li a:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  /* line 505, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/* line 522, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li a .business_link_hover {
+  width: 90%;
+  height: 90%;
+  border: solid 1px #fff;
+  margin: 5%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  /* line 522, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a .business_link_hover {
+    width: 100%;
+    height: 80px;
+    border: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  /* line 537, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a .business_link_hover::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 10px;
+    bottom: 41%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  /* line 547, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a .business_link_hover::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 10px;
+    top: 41%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+/* line 558, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_title {
+  height: 50%;
+  border-bottom: solid 1px #fff;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  /* line 558, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_title {
+    width: auto;
+    height: auto;
+    border: none;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 558, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_title {
+    margin-left: 2%;
+    margin-right: 4%;
+  }
+}
+/* line 572, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_title h3 {
+  bottom: 5%;
+  color: #fff;
+  font-size: 3em;
+  font-weight: normal;
+  left: 0;
+  position: absolute;
+  right: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+@media screen and (max-width: 768px) {
+  /* line 572, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_title h3 {
+    bottom: 0;
+    font-size: 2em;
+    padding: 0 10%;
+    position: relative;
+    top: 0;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 572, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_title h3 {
+    font-size: 1.5em;
+    padding: 0;
+  }
+}
+/* line 595, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_article {
+  height: 50%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  /* line 595, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_article {
+    height: auto;
+  }
+}
+/* line 601, ../scss/gisuco.scss */
+#wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_article p {
+  color: #fff;
+  padding-top: 5%;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  /* line 601, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li a .business_link_hover .business_link_article p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 612, ../scss/gisuco.scss */
+  #wrapper #main_wrap .business_wrap ul li img {
+    height: auto;
+  }
+}
+/* line 620, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap {
+  padding-bottom: 11%;
+}
+/* line 622, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .works_header {
+  text-align: center;
+  padding: 0 0 6% 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 622, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .works_header {
+    padding: 6% 0 15% 0;
+  }
+}
+/* line 628, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .works_header h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5em;
+  font-weight: 100;
+  padding: 0;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  /* line 628, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .works_header h2 {
+    font-size: 3.5em;
+  }
+}
+/* line 638, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .works_header p {
+  color: #3f7eb9;
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  /* line 638, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .works_header p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 647, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .slide_wrap article {
+    display: block;
+  }
+}
+/* line 652, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .slide_wrap .slide_img {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  /* line 652, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .slide_wrap .slide_img {
+    width: 100%;
+  }
+}
+/* line 658, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .slide_wrap .slide_article {
+  width: 50%;
+  border-color: #f6f6f6;
+  letter-spacing: 0.3em;
+  padding: 0 3%;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  /* line 658, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .slide_wrap .slide_article {
+    width: 100%;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0 3% 8% 3%;
+  }
+}
+/* line 670, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .slide_wrap .slide_article h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  padding-bottom: 4%;
+  padding-top: 15%;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  /* line 670, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .slide_wrap .slide_article h3 {
+    padding-top: 5%;
+  }
+}
+/* line 680, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .slide_wrap .slide_article .works_title {
+  padding-bottom: 4%;
+}
+/* line 683, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .slide_wrap .slide_article p {
+  letter-spacing: 2px;
+  padding-bottom: 4%;
+}
+@media screen and (max-width: 768px) {
+  /* line 683, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .slide_wrap .slide_article p {
+    font-size: 0.9em;
+    line-height: 170%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 691, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .slide_wrap .slide_article .button_wrap {
+    padding-top: 2%;
+  }
+}
+/* line 695, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .slide_wrap .slide_article .button_wrap a {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 695, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .slide_wrap .slide_article .button_wrap a {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+/* line 704, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .slide_wrap button {
+  color: #000;
+  top: 104%;
+}
+@media screen and (max-width: 768px) {
+  /* line 704, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .slide_wrap button {
+    color: #fff;
+    top: 0;
+  }
+}
+/* line 712, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .slide_wrap .slick-next {
+  font-family: 'Roboto', sans-serif;
+  right: 0;
+}
+/* line 716, ../scss/gisuco.scss */
+#wrapper #main_wrap .works_wrap .slide_wrap .slick-prev {
+  font-family: 'Roboto', sans-serif;
+  left: 96%;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 716, ../scss/gisuco.scss */
+  #wrapper #main_wrap .works_wrap .slide_wrap .slick-prev {
+    left: 90%;
+  }
+}
+/* line 726, ../scss/gisuco.scss */
+#wrapper #main_wrap .philosophy_wrap {
+  background-image: url(../images/philosophy_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 0;
+  text-align: center;
+}
+/* line 732, ../scss/gisuco.scss */
+#wrapper #main_wrap .philosophy_wrap h2 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5em;
+  font-weight: 100;
+  padding: 0 0 7% 0;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  /* line 732, ../scss/gisuco.scss */
+  #wrapper #main_wrap .philosophy_wrap h2 {
+    font-size: 2.7em;
+  }
+}
+/* line 743, ../scss/gisuco.scss */
+#wrapper #main_wrap .philosophy_wrap .philosophy_symbol {
+  color: #fff;
+  line-height: 100%;
+  padding-bottom: 3%;
+}
+@media screen and (max-width: 768px) {
+  /* line 743, ../scss/gisuco.scss */
+  #wrapper #main_wrap .philosophy_wrap .philosophy_symbol {
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 743, ../scss/gisuco.scss */
+  #wrapper #main_wrap .philosophy_wrap .philosophy_symbol {
+    font-size: 1em;
+  }
+}
+/* line 755, ../scss/gisuco.scss */
+#wrapper #main_wrap .philosophy_wrap p {
+  color: #fff;
+  line-height: 235%;
+  letter-spacing: 0.2em;
+}
+@media screen and (max-width: 768px) {
+  /* line 755, ../scss/gisuco.scss */
+  #wrapper #main_wrap .philosophy_wrap p {
+    margin: 0 7%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 755, ../scss/gisuco.scss */
+  #wrapper #main_wrap .philosophy_wrap p {
+    font-size: 0.8em;
+    margin: 0 14%;
+  }
+}
+/* line 768, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_wrap {
+  padding-bottom: 5%;
+  padding-top: 8%;
+  text-align: center;
+}
+/* line 772, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_wrap .recruit_header {
+  text-align: center;
+  padding-bottom: 4%;
+}
+@media screen and (max-width: 768px) {
+  /* line 772, ../scss/gisuco.scss */
+  #wrapper #main_wrap .recruit_wrap .recruit_header {
+    padding-bottom: 15%;
+  }
+}
+/* line 778, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_wrap .recruit_header h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5em;
+  font-weight: 100;
+  padding: 0 0 1% 0;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  /* line 778, ../scss/gisuco.scss */
+  #wrapper #main_wrap .recruit_wrap .recruit_header h2 {
+    font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 788, ../scss/gisuco.scss */
+  #wrapper #main_wrap .recruit_wrap .recruit_header .recruit_wrap_article {
+    margin: 0 7%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 788, ../scss/gisuco.scss */
+  #wrapper #main_wrap .recruit_wrap .recruit_header .recruit_wrap_article {
+    font-size: 0.8em;
+    margin: 0 8%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 799, ../scss/gisuco.scss */
+  #wrapper #main_wrap .recruit_wrap .button_wrap a {
+    width: 32%;
+  }
+}
+/* line 806, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_nav_wrap {
+  border-top: solid 1px #adadad;
+  border-bottom: solid 1px #adadad;
+}
+@media screen and (max-width: 768px) {
+  /* line 806, ../scss/gisuco.scss */
+  #wrapper #main_wrap .recruit_nav_wrap {
+    border-bottom: none;
+  }
+}
+/* line 812, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_nav_wrap .recruit_nav {
+  padding: 0;
+}
+/* line 814, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_nav_wrap .recruit_nav li {
+  width: 20%;
+  border-right: solid 1px #adadad;
+  padding-bottom: 2%;
+}
+/* line 818, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_nav_wrap .recruit_nav li:last-child {
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  /* line 814, ../scss/gisuco.scss */
+  #wrapper #main_wrap .recruit_nav_wrap .recruit_nav li {
+    width: 50%;
+    border-bottom: solid 1px #adadad;
+  }
+  /* line 824, ../scss/gisuco.scss */
+  #wrapper #main_wrap .recruit_nav_wrap .recruit_nav li:last-child {
+    border-bottom: solid 1px #adadad;
+    border-right: solid 1px #adadad;
+  }
+}
+/* line 831, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_nav_wrap .recruit_nav li a:hover p::after {
+  transform: scaleX(1);
+}
+/* line 836, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_nav_wrap .recruit_nav li .recruit_img_wrap {
+  width: 100px;
+  height: 100px;
+  margin: 10% auto 6%;
+}
+/* line 840, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_nav_wrap .recruit_nav li .recruit_img_wrap img {
+  height: 100%;
+}
+/* line 844, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_nav_wrap .recruit_nav li p {
+  position: relative;
+  display: inline-block;
+  padding: .4em;
+  text-decoration: none;
+}
+/* line 849, ../scss/gisuco.scss */
+#wrapper #main_wrap .recruit_nav_wrap .recruit_nav li p::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  background-color: #adadad;
+  transition: all .3s ease;
+}
+/* line 864, ../scss/gisuco.scss */
+#wrapper #main_wrap .to_top {
+  border-top: 1px solid #eeeeee;
+  padding: 1% 0;
+  margin-top: 10%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  /* line 864, ../scss/gisuco.scss */
+  #wrapper #main_wrap .to_top {
+    margin-top: 30%;
+  }
+}
+/* line 873, ../scss/gisuco.scss */
+#wrapper #main_wrap .to_top a::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  background-image: url(../images/icon_arrow01.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+  display: inline-block;
+}
+/* line 887, ../scss/gisuco.scss */
+#wrapper footer {
+  padding: 5% 0;
+  background-color: #000;
+}
+/* line 890, ../scss/gisuco.scss */
+#wrapper footer .footer_wrap {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  /* line 890, ../scss/gisuco.scss */
+  #wrapper footer .footer_wrap {
+    padding: 21%;
+  }
+}
+/* line 895, ../scss/gisuco.scss */
+#wrapper footer .footer_wrap img {
+  width: 80px;
+  padding: 3% 0 2%;
+}
+/* line 899, ../scss/gisuco.scss */
+#wrapper footer .footer_wrap p {
+  color: #fff;
+  padding-bottom: 3%;
+}

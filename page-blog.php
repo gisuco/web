@@ -11,7 +11,7 @@
 				<section class="contents_wrap flex_row works_contents_wrap">
 						<?php $args = array(
 							'posts_per_page'   => 9,
-							'post_type'        => 'works_post',
+							'post_type'        => 'blog_post',
 							'paged'            => $paged,
 							);
 							$posts_array = get_posts( $args ); ?>
@@ -40,7 +40,7 @@
 								<h2><?php the_title();?></h2>
 								<p class="works_text">
 									<?php 
-										$terms = get_the_terms( $post -> ID, 'work_category' );
+										$terms = get_the_terms( $post -> ID, 'blog_category' );
 										foreach ( $terms as $term ) { 
 											$termname = $term -> name; 
 												}

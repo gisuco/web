@@ -50,7 +50,7 @@
 							</div>
 						</a>
 					</article>
-                    <?php endforreach; ?>
+                    <?php endforeach; ?>
 				</section>
 			</section>
 			<section class="contents_wrap news_pager">

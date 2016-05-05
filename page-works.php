@@ -11,7 +11,7 @@
 				<section class="contents_wrap flex_row works_contents_wrap">
 						<?php $args = array(
 							'posts_per_page'   => 9,
-							'post_type'        => 'interview_post',
+							'post_type'        => 'works_post',
 							'paged'            => $paged,
 							);
 							$posts_array = get_posts( $args ); ?>

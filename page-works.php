@@ -16,7 +16,6 @@
 							);
 							$posts_array = get_posts( $args ); ?>
 		                <?php foreach( $posts_array as $post ) : ?>
-						<?php if(have_posts()) : while (have_posts()) : the_post(); ?>
                     <article class="works_contents">
 						<a href="<?php the_permalink() ?>">
 							<div class="works_hover">

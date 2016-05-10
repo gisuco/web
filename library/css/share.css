@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* line 3, ../scss/share.scss */
 a {
   color: #fff;
@@ -119,3 +120,126 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, table, th, tr, form {
 .mb3 {
   margin-bottom: 3%;
 }
+=======
+/* line 3, ../scss/share.scss */
+a {
+  color: #fff;
+}
+
+/* line 4, ../scss/share.scss */
+a img {
+  border: none;
+  outline: none;
+}
+
+/* line 5, ../scss/share.scss */
+a:link img {
+  border: none;
+  outline: none;
+}
+
+/* line 6, ../scss/share.scss */
+a:visited img {
+  border: none;
+  outline: none;
+}
+
+/* line 7, ../scss/share.scss */
+a:focus img, a:hover img {
+  border: none;
+  outline: none;
+}
+
+/* line 8, ../scss/share.scss */
+a:active img {
+  border: none;
+  outline: none;
+}
+
+/* line 9, ../scss/share.scss */
+a, a:focus, a:link, a:visited, a:active {
+  outline: none;
+}
+
+/* line 11, ../scss/share.scss */
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, ../scss/share.scss */
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, table, th, tr, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* for modern brouser */
+/* line 22, ../scss/share.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 29, ../scss/share.scss */
+.clearfix {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 0.1em;
+  line-height: 0;
+}
+
+/* Hides from IE-mac \*/
+/* line 36, ../scss/share.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 39, ../scss/share.scss */
+.clearfix {
+  display: block;
+}
+
+/* End hide from IE-mac */
+/* line 44, ../scss/share.scss */
+.aligncenter {
+  text-align: center;
+}
+
+/* line 45, ../scss/share.scss */
+.alignleft {
+  text-align: left;
+}
+
+/* line 46, ../scss/share.scss */
+.alignright {
+  text-align: right;
+}
+
+/* line 48, ../scss/share.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 49, ../scss/share.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 50, ../scss/share.scss */
+.overline {
+  text-decoration: overline;
+}
+
+/* line 51, ../scss/share.scss */
+.line-through {
+  text-decoration: line-through;
+}
+
+/* line 53, ../scss/share.scss */
+.mb3 {
+  margin-bottom: 3%;
+}
+>>>>>>> 95e892f0119610bae73d9832826c30de7e4c312c

@@ -30,12 +30,15 @@
 					<p class="child_sub_title">その他実績</p>
 				</header>
 				<section class=" flex_row works_contents_wrap">
-					<?php query_posts( array(
-								'post_type' => 'work_post', //カスタム投稿名
-								'posts_per_page' => 6, //表示件数（ -1 = 全件 ）
-								'paged' => $paged
-					)); ?>
-					<?php if(have_posts()) : while (have_posts()) : the_post(); ?>
+                	<?php
+						$id = get_the_ID();
+						$args = array(
+							'posts_per_page'   => 6,
+							'post_type'        => 'work_post',
+							'exclude'            => $id,
+							);
+						$posts_array = get_posts( $args ); ?>
+		            <?php foreach( $posts_array as $post ) : ?>
                     <article class="works_contents">
 						<a href="<?php the_permalink() ?>">
 							<div class="works_hover">
@@ -70,8 +73,7 @@
 							</div>
 						</a>
 					</article>
-                    <?php endwhile; ?>
-					<?php endif; ?>
+                    <?php endforeach; ?>
 					
 			</section>
 
